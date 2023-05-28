@@ -13,6 +13,8 @@ export class MockClient extends knex.Client {
       this._attachDialectQueryCompiler(config);
     }
   }
+  
+ 
 
   public acquireConnection(): Promise<MockConnection> {
     return Promise.resolve(new MockConnection());
